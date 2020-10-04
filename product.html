@@ -1,0 +1,408 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/css/bootstrap.min.css" integrity="sha384-DhY6onE6f3zzKbjUPRc2hOzGAdEf4/Dz+WJwBvEYL/lkkIsI3ihufq9hk9K4lVoK" crossorigin="anonymous">
+
+    
+
+    <style>
+    .vertical-menu {
+  width: 320px;
+  border: 1px solid #ebebeb;
+ /* Set a width if you like */
+}
+
+.vertical-menu a {
+    
+    color: black; /* Black text color */
+    display: block; /* Make the links appear below each other */
+    padding: 12px; /* Add some padding */
+    text-decoration: none; /* Remove underline from links */
+}
+
+.vertical-menu a:hover {
+  background-color: #ccc; /* Dark grey background on mouse-over */
+}
+
+.vertical-menu a.active {
+  background-color: #4CAF50; /* Add a green color to the "active/current" link */
+  color: white;
+}
+.container{  /* sister robot banner */
+  position: relative;
+}
+
+.shop-now {  /* shop now button */
+  position: absolute;
+  bottom: 50px;
+  right: 50px;
+  padding-left: 20px;
+  padding-right: 20px;
+} 
+
+hr.line {  /* featured product horizontal line */
+  border: 3px solid green;
+  margin: auto;
+  width: 10%;
+}
+/* hover navbar effect start */
+hr {
+    width: 80%;
+    border: 0;
+    height: 1px;
+    margin-top: 0px;
+    background-color: #000;
+}
+
+.navbar {
+    text-align: center;
+}
+
+.navbar a {
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    color: #000;
+    text-decoration: none;
+    font-size: 20px;
+    overflow: hidden;
+    top: 5px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.navbar a:after {
+    content: "";
+    position: absolute;
+    background-color: green;
+    height: 2px;
+    width: 0%;
+    transform: translateX(-50%);
+    left: 50%;
+    bottom: 0;
+    transition: .35s ease;
+}
+
+.navbar a:hover:after {
+    width: 100%;
+}
+/* hover navbar effect end */
+    </style>
+
+    <title>Product</title>
+  </head>
+  <body>
+    
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 col-sm-12 col-xs-12">
+              <!-- all departments -->
+                <div class="vertical-menu">
+                    <a href="#" class="active"><b>All Departments</b></a>
+                        <a href="#">Link 1</a>
+                        <a href="#">Link 2</a>
+                        <a href="#">Link 3</a>
+                        <a href="#">Link 4</a>
+                        <a href="#">Link 5</a>
+                        <a href="#">Link 6</a>
+                        <a href="#">Link 7</a>
+                        <a href="#">Link 8</a>
+                        <a href="#">Link 9</a>
+                        <a href="#">Link 10</a>
+                  </div>
+                </div>
+            <div class="col-lg-8 col-sm-12 col-xs-12">
+                <form class="d-flex">
+                    <input class="form-control mr-2 mt-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-success" type="submit">Search</button>
+                </form>
+                <div class="container">
+                  <!-- sister robot banner -->
+                    <img src="image/sister.png" class="img-fluid pt-4" alt="image">
+                    <!-- shop now -->
+                    <button class="btn shop-now text-light" type="submit" style="background-color: #7cc23a;"><b>Shop now</b></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- carousel slider start -->
+    <div class="container pt-5">
+      <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+              <div class="col">
+                <div class="card">
+                  <img src="image/robot.jpg" class="img-fluid" alt="image">
+                </div>
+              </div>
+              <div class="col">
+                <div class="card">
+                  <img src="image/robot.jpg" class="img-fluid" alt="image">
+                </div>
+              </div>
+              <div class="col">
+                <div class="card">
+                  <img src="image/robot.jpg" class="img-fluid" alt="image">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+              <div class="col">
+                <div class="card">
+                  <img src="image/bg.png" class="img-fluid" alt="image">
+                </div>
+              </div>
+              <div class="col">
+                <div class="card">
+                  <img src="image/bg.png" class="img-fluid" alt="image">
+                </div>
+              </div>
+              <div class="col">
+                <div class="card">
+                  <img src="image/bg.png" class="img-fluid" alt="image">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+              <div class="col">
+                <div class="card">
+                  <img src="image/wave.png" class="img-fluid" alt="image">
+                </div>
+              </div>
+              <div class="col">
+                <div class="card">
+                  <img src="image/wave.png" class="img-fluid" alt="...">
+                </div>
+              </div>
+              <div class="col">
+                <div class="card">
+                  <img src="image/wave.png" class="img-fluid" alt="...">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </a>
+      </div>
+    </div>
+    <!-- caroudel slider end -->
+
+    <!-- featured product -->
+      <div class="text-center p-5">
+        <h1><b>Featured Product</b></h1>
+       <hr class="line"><br>
+
+       <!-- hover navbar start -->
+      <div class="container">
+         <div class="col-lg-12 col-sm-12 col-xs-12">
+          <nav class="navbar navbar-expand-lg navbar-light">
+         <ul class="navbar-nav m-auto" style="font-family: sans-serif;">
+          <li class="nav-item active">
+          <a class="nav-link" href="#">ALL
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Product 1</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Product 2</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Product 3</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Product 4</a>
+        </li>
+      </ul>
+          </nav>
+        </div>
+      </div>
+      <!-- hover navbar end -->
+
+
+      <!-- product with price -->
+      <div class="container">
+        <div class="row p-3">
+          <div class="col-lg-4 col-sm-6 col-xs-12 pt-3">
+          <div class="col text-center">
+           <img src="image/robot.jpg" alt="" class="img-fluid">
+           <h4 class="text-center p-1">Robot</h4>
+           <h5 class="text-center p-1"><b>$100</b></h5>
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-6 col-xs-12 pt-3">
+          <div class="col text-center">
+           <img src="image/robot.jpg" alt="" class="img-fluid">
+           <h4 class="text-center p-1">Robot</h4>
+           <h5 class="text-center p-1"><b>$100</b></h5>
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-6 col-xs-12 pt-3">
+          <div class="col text-center">
+           <img src="image/robot.jpg" alt="" class="img-fluid">
+           <h4 class="text-center p-1">Robot</h4>
+           <h5 class="text-center p-1"><b>$100</b></h5>
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-6 col-xs-12 pt-3">
+          <div class="col text-center">
+           <img src="image/robot.jpg" alt="" class="img-fluid">
+           <h4 class="text-center p-1">Robot</h4>
+           <h5 class="text-center p-1"><b>$100</b></h5>
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-6 col-xs-12 pt-3">
+          <div class="col text-center">
+           <img src="image/robot.jpg" alt="" class="img-fluid">
+           <h4 class="text-center p-1">Robot</h4>
+           <h5 class="text-center p-1"><b>$100</b></h5>
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-6 col-xs-12 pt-3">
+          <div class="col text-center">
+           <img src="image/robot.jpg" alt="" class="img-fluid">
+           <h4 class="text-center p-1">Robot</h4>
+           <h5 class="text-center p-1"><b>$100</b></h5>
+          </div>
+        </div>
+        </div>
+        </div>
+      <!-- product with price end -->
+
+      <!-- latest product card  -->
+        <div class="container">
+          <div class="row pt-5">
+            <div class="col-lg-4 col-sm-6 col-xs-12">
+              <h3 class="pb-3"><b>Latest Products</b></h3>
+              <div class="card mb-3">
+                <div class="row g-0">
+                  <div class="col-md-6 p-3">
+                    <img src="image/robot.jpg" class="img-fluid" alt="...">
+                  </div>
+                  <div class="col-md-6">
+                    <div class="card-body">
+                      <h5 class="card-title">Robot</h5>
+                      <h6><b>$100</b></h6>
+                    </div>
+                  </div>
+                  <div class="col-md-6 p-3">
+                    <img src="image/robot.jpg" class="img-fluid" alt="...">
+                  </div>
+                  <div class="col-md-6">
+                    <div class="card-body">
+                      <h5 class="card-title">Robot</h5>
+                      <h6><b>$100</b></h6>
+                    </div>
+                  </div>
+                  <div class="col-md-6 p-3">
+                    <img src="image/robot.jpg" class="img-fluid" alt="...">
+                  </div>
+                  <div class="col-md-6">
+                    <div class="card-body">
+                      <h5 class="card-title">Robot</h5>
+                      <h6><b>$100</b></h6>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Top rated product card -->
+            <div class="col-lg-4 col-sm-6 col-xs-12">
+              <h3 class="pb-3" ><b>Top Rated Products</b></h3>
+              <div class="card mb-3">
+                <div class="row g-0">
+                  <div class="col-md-6 p-3">
+                    <img src="image/robot.jpg" class="img-fluid" alt="...">
+                  </div>
+                  <div class="col-md-6">
+                    <div class="card-body">
+                      <h5 class="card-title">Robot</h5>
+                      <h6><b>$100</b></h6>
+                    </div>
+                  </div>
+                  <div class="col-md-6 p-3">
+                    <img src="image/robot.jpg" class="img-fluid" alt="...">
+                  </div>
+                  <div class="col-md-6">
+                    <div class="card-body">
+                      <h5 class="card-title">Robot</h5>
+                      <h6><b>$100</b></h6>
+                    </div>
+                  </div>
+                  <div class="col-md-6 p-3">
+                    <img src="image/robot.jpg" class="img-fluid" alt="...">
+                  </div>
+                  <div class="col-md-6">
+                    <div class="card-body">
+                      <h5 class="card-title">Robot</h5>
+                      <h6><b>$100</b></h6>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- review product card -->
+            <div class="col-lg-4 col-sm-6 col-xs-12">
+              <h3 class="pb-3" ><b>Review Products</b></h3>
+              <div class="card mb-3">
+                <div class="row g-0">
+                  <div class="col-md-6 p-3">
+                    <img src="image/robot.jpg" class="img-fluid" alt="...">
+                  </div>
+                  <div class="col-md-6">
+                    <div class="card-body">
+                      <h5 class="card-title">Robot</h5>
+                      <h6><b>$100</b></h6>
+                    </div>
+                  </div>
+                  <div class="col-md-6 p-3">
+                    <img src="image/robot.jpg" class="img-fluid" alt="...">
+                  </div>
+                  <div class="col-md-6">
+                    <div class="card-body">
+                      <h5 class="card-title">Robot</h5>
+                      <h6><b>$100</b></h6>
+                    </div>
+                  </div>
+                  <div class="col-md-6 p-3">
+                    <img src="image/robot.jpg" class="img-fluid" alt="...">
+                  </div>
+                  <div class="col-md-6">
+                    <div class="card-body">
+                      <h5 class="card-title">Robot</h5>
+                      <h6><b>$100</b></h6>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      
+    
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/js/bootstrap.bundle.min.js" integrity="sha384-BOsAfwzjNJHrJ8cZidOg56tcQWfp6y72vEJ8xQ9w6Quywb24iOsW913URv1IS4GD" crossorigin="anonymous"></script>
+  
+  </body>
+</html>
